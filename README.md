@@ -52,16 +52,19 @@ npm run dev
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page]("C:\Users\Sonu\Desktop\1.png")
+![Home Page](<img width="1917" height="911" alt="1" src="https://github.com/user-attachments/assets/53dc1605-0572-42bf-9812-4519b3915fe0" />
+)
 
 ### Add Book Form
-![Add Book Form]("C:\Users\Sonu\Desktop\2.png")
+![Add Book Form](<img width="1918" height="922" alt="2" src="https://github.com/user-attachments/assets/75928932-1d96-4a46-a156-7596983e5e6b" />
+)
 
 ### Edit Book Modal / Form
-![Edit Book Form]("C:\Users\Sonu\Desktop\3.png")
+![Edit Book Form](<img width="1910" height="907" alt="3" src="https://github.com/user-attachments/assets/b3ffc445-25a8-458c-a7cb-79cf440056b5" />
+)
 
 ### Delete Confirmation Modal
-![Delete Confirmation](<img width="1918" height="912" alt="4" src="https://github.com/user-attachments/assets/b23da3e0-9877-4af1-8e34-b07e3b0519b3" />
+![Delete Confirmation](<img width="1918" height="912" alt="4" src="https://github.com/user-attachments/assets/c11ba129-b8f7-47e9-91da-55a68bdd7093" />
 )
 
 ## 💡 Production-Ready Improvements Implemented
