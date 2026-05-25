@@ -3,7 +3,7 @@
 A modern, responsive React application for managing a collection of books. Built for a technical assignment.
 
 ## 🔗 Live Demo
-> **[View Live Application Here](https://your-deployed-url.vercel.app)** *(Replace this with your deployed link)*
+> **[View Live Application Here](https://book-management-system-tau.vercel.app/)** 
 
 ## ✨ Features
 
@@ -51,19 +51,18 @@ npm run dev
 
 ## 📸 Screenshots
 
-*(Replace the paths below with your actual screenshot images before submitting)*
-
 ### Home Page
-![Home Page](./screenshots/home.png)
+![Home Page]("C:\Users\Sonu\Desktop\1.png")
 
 ### Add Book Form
-![Add Book Form](./screenshots/add-book.png)
+![Add Book Form]("C:\Users\Sonu\Desktop\2.png")
 
 ### Edit Book Modal / Form
-![Edit Book Form](./screenshots/edit-book.png)
+![Edit Book Form]("C:\Users\Sonu\Desktop\3.png")
 
 ### Delete Confirmation Modal
-![Delete Confirmation](./screenshots/delete-modal.png)
+![Delete Confirmation](<img width="1918" height="912" alt="4" src="https://github.com/user-attachments/assets/b23da3e0-9877-4af1-8e34-b07e3b0519b3" />
+)
 
 ## 💡 Production-Ready Improvements Implemented
 
