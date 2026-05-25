@@ -1,10 +1,14 @@
-import { FiSearch, FiX } from 'react-icons/fi';
+import { FiSearch, FiX, FiLoader } from 'react-icons/fi';
 
-const SearchBar = ({ value, onChange }) => {
+const SearchBar = ({ value, onChange, isSearching = false }) => {
   return (
     <div className="relative flex-1 min-w-0">
       <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
-        <FiSearch className="w-4 h-4 text-gray-400" />
+        {isSearching ? (
+          <FiLoader className="w-4 h-4 text-primary-400 animate-spin" />
+        ) : (
+          <FiSearch className="w-4 h-4 text-gray-400" />
+        )}
       </div>
       <input
         id="search-books"
@@ -19,7 +23,8 @@ const SearchBar = ({ value, onChange }) => {
         <button
           onClick={() => onChange('')}
           id="clear-search"
-          className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors"
+          className="absolute inset-y-0 right-0 pr-3.5 flex items-center
+                     text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors"
           aria-label="Clear search"
         >
           <FiX className="w-4 h-4" />

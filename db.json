@@ -1,0 +1,60 @@
+{
+  "books": [
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "year": 1926,
+      "description": "A story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan.",
+      "id": "1"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Sci-Fi",
+      "year": 1949,
+      "description": "A dystopian novel set in a totalitarian society ruled by Big Brother.",
+      "id": "3"
+    },
+    {
+      "title": "A Brief History of Time",
+      "author": "Stephen Hawking",
+      "genre": "Education",
+      "year": 1988,
+      "description": "A landmark volume in science writing that explains cosmology to the general reader.",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "genre": "Mystery",
+      "year": 2003,
+      "description": "A murder inside the Louvre and clues in Da Vinci paintings lead to the discovery of a religious mystery."
+    },
+    {
+      "id": "6",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "year": 1997,
+      "description": "An orphan boy discovers he is a wizard and begins his education at Hogwarts School."
+    },
+    {
+      "id": "8",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "genre": "Technology",
+      "year": 2008,
+      "description": "A handbook of agile software craftsmanship with best practices for writing clean, maintainable code."
+    },
+    {
+      "title": "NPM",
+      "author": "JOHN",
+      "genre": "Sci-Fi",
+      "year": 2002,
+      "description": "MCNCK",
+      "id": "izR48fh"
+    }
+  ]
+}

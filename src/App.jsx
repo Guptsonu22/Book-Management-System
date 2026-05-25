@@ -2,12 +2,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import AddBook from './pages/AddBook';
 import EditBook from './pages/EditBook';
 
 const App = () => {
-  // Dark mode state with localStorage persistence
+  // Dark mode — persisted in localStorage, respects system preference
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem('darkMode');
     if (saved !== null) return JSON.parse(saved);
@@ -16,37 +17,40 @@ const App = () => {
 
   useEffect(() => {
     localStorage.setItem('darkMode', JSON.stringify(darkMode));
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+    document.documentElement.classList.toggle('dark', darkMode);
   }, [darkMode]);
 
   const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
   return (
     <Router>
-      <div className="min-h-screen bg-slate-50 dark:bg-gray-950">
+      <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-gradient-to-b dark:from-[#020617] dark:to-[#000814]">
+        {/* Sticky top navbar */}
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
-        <main id="main-content">
+        {/* Page content */}
+        <main id="main-content" className="flex-1">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/add" element={<AddBook />} />
+            <Route path="/"        element={<Home />} />
+            <Route path="/add"     element={<AddBook />} />
             <Route path="/edit/:id" element={<EditBook />} />
-            {/* 404 fallback */}
+
+            {/* 404 */}
             <Route
               path="*"
               element={
                 <div className="flex flex-col items-center justify-center py-32 gap-4 text-center px-4">
-                  <div className="text-6xl font-black text-gray-200 dark:text-gray-800">404</div>
-                  <h2 className="text-xl font-bold text-gray-900 dark:text-white">Page not found</h2>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    The page you&apos;re looking for doesn&apos;t exist.
+                  <div className="text-7xl font-black text-gray-200 dark:text-gray-800 select-none">
+                    404
+                  </div>
+                  <h2 className="text-xl font-bold text-gray-900 dark:text-white">
+                    Page not found
+                  </h2>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 max-w-xs">
+                    The page you&apos;re looking for doesn&apos;t exist or was moved.
                   </p>
                   <a href="/" className="btn-primary mt-2">
-                    Go Home
+                    Go to My Library
                   </a>
                 </div>
               }
@@ -54,7 +58,10 @@ const App = () => {
           </Routes>
         </main>
 
-        {/* Toast Container */}
+        {/* Footer */}
+        <Footer />
+
+        {/* Toast notifications */}
         <ToastContainer
           position="bottom-right"
           autoClose={3000}

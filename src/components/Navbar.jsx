@@ -1,13 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
-import { FiBookOpen, FiPlus, FiSun, FiMoon, FiGithub } from 'react-icons/fi';
+import { FiBookOpen, FiPlus, FiSun, FiMoon } from 'react-icons/fi';
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const location = useLocation();
 
   return (
-    <nav className="sticky top-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <Link
             to="/"
@@ -57,7 +57,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <button
               id="dark-mode-toggle"
               onClick={toggleDarkMode}
-              className="btn-ghost p-2.5 rounded-xl"
+              className="btn-ghost w-10 p-0 rounded-xl"
               aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
             >
               {darkMode ? (
@@ -67,17 +67,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               )}
             </button>
 
-            {/* GitHub link */}
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              id="navbar-github"
-              className="btn-ghost p-2.5 rounded-xl"
-              aria-label="View on GitHub"
-            >
-              <FiGithub className="w-5 h-5 text-gray-600 dark:text-gray-400" />
-            </a>
+
           </div>
         </div>
       </div>

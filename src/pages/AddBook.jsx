@@ -1,13 +1,19 @@
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiArrowLeft, FiBookOpen } from 'react-icons/fi';
 import BookForm from '../components/BookForm';
 import { createBook } from '../services/api';
 import { toast } from 'react-toastify';
-import { useState } from 'react';
 
 const AddBook = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
+
+  // Page title
+  useEffect(() => {
+    document.title = 'Add Book — BookShelf';
+    return () => { document.title = 'My Library — BookShelf'; };
+  }, []);
 
   const handleSubmit = async (formData) => {
     setLoading(true);
@@ -41,13 +47,14 @@ const AddBook = () => {
 
       {/* Card */}
       <div className="card overflow-hidden">
-        {/* Top gradient */}
         <div className="h-1.5 bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600" />
 
         <div className="p-6 sm:p-8">
           {/* Header */}
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-11 h-11 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg shadow-primary-500/30">
+            <div className="w-11 h-11 bg-gradient-to-br from-primary-500 to-primary-700
+                            rounded-xl flex items-center justify-center
+                            shadow-lg shadow-primary-500/30">
               <FiBookOpen className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -66,12 +73,13 @@ const AddBook = () => {
       </div>
 
       {/* Tips card */}
-      <div className="mt-4 p-4 rounded-xl bg-primary-50 dark:bg-primary-900/10 border border-primary-100 dark:border-primary-900/30">
+      <div className="mt-4 p-4 rounded-xl bg-primary-50 dark:bg-primary-900/10
+                      border border-primary-100 dark:border-primary-900/30">
         <p className="text-xs text-primary-700 dark:text-primary-400 font-medium mb-1">
           💡 Pro Tip
         </p>
         <p className="text-xs text-primary-600 dark:text-primary-500">
-          All fields marked with <span className="text-red-500">*</span> are required. 
+          All fields marked with <span className="text-red-500">*</span> are required.
           You can optionally add a description to help remember key details about the book.
         </p>
       </div>
