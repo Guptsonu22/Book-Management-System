@@ -52,20 +52,16 @@ npm run dev
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](<img width="1917" height="911" alt="1" src="https://github.com/user-attachments/assets/53dc1605-0572-42bf-9812-4519b3915fe0" />
-)
+<img width="1917" height="911" alt="1" src="https://github.com/user-attachments/assets/53dc1605-0572-42bf-9812-4519b3915fe0" />
 
 ### Add Book Form
-![Add Book Form](<img width="1918" height="922" alt="2" src="https://github.com/user-attachments/assets/75928932-1d96-4a46-a156-7596983e5e6b" />
-)
+<img width="1918" height="922" alt="2" src="https://github.com/user-attachments/assets/75928932-1d96-4a46-a156-7596983e5e6b" />
 
 ### Edit Book Modal / Form
-![Edit Book Form](<img width="1910" height="907" alt="3" src="https://github.com/user-attachments/assets/b3ffc445-25a8-458c-a7cb-79cf440056b5" />
-)
+<img width="1910" height="907" alt="3" src="https://github.com/user-attachments/assets/b3ffc445-25a8-458c-a7cb-79cf440056b5" />
 
 ### Delete Confirmation Modal
-![Delete Confirmation](<img width="1918" height="912" alt="4" src="https://github.com/user-attachments/assets/c11ba129-b8f7-47e9-91da-55a68bdd7093" />
-)
+<img width="1918" height="912" alt="4" src="https://github.com/user-attachments/assets/c11ba129-b8f7-47e9-91da-55a68bdd7093" />
 
 ## 💡 Production-Ready Improvements Implemented
 
